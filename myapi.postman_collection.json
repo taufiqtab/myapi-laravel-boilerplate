@@ -1,0 +1,462 @@
+{
+	"info": {
+		"_postman_id": "02e5929e-3e8d-4673-92b4-a30cc7b5d91b",
+		"name": "myapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Products Example",
+			"item": [
+				{
+					"name": "Product Add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMwZTUxYWVjZjQ2MjlmYmUyODYzZWFhNTEyZWFhOTA5OTUwYWE3ZjMxMWU1ZWJjOGIwNWIwYzk0Mzg3MWNkOTUwOTRkZDM2OTEwOTE1YmMiLCJpYXQiOiIxNjE0NzU2MzIyLjg5NjI0NSIsIm5iZiI6IjE2MTQ3NTYzMjIuODk2MjU2IiwiZXhwIjoiMTY0NjI5MjMyMi42NzEyOTUiLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.FP-1gZDyL4pUAGN0MTTGCeVzBWTOTIWUS9iBRgl_FrOopVi-AnFIOf3eiMKpbvK63dn5AbKpEmEhBMN1RyN1fV_JMiggN-VxRNGaMZU-scNotUmNyvxP9Ath9A5C6oXHRiH5ErKLWH28Ad_T-LP5F1Vf82VVmK7LJ8nHPzBVIoymQCF9kjABmYfSB3TPb9s1T5qTJgFX5S89cIELg_Gf_L8Vq56dlo9eU7YGg77zaEJB5ZT72u3NqSNdOQyJdh_QHBtemh5tun6C7hUtKPauhLWd1lqslsYppgkaYnHqKgTVJip77CLfE2YVuIsuP9i-AXmFtjsnr6xVVLzwGApLXYPjn9x8t-biZH0cvZXTUfMkjL6JoxUFfH4W9hZx8Y_K76OhtqKoBRYAKRPtkq5fq_c1VKTdB-7F8t5ArsiD0zsH2jntFldCZkdW-RJcy5arApbPMc8TzGMly-RntCrWoPVazLJ1yZbFB9SEoyarSH3msJEYZORHlq2jHOz9ipSATsdx7WLCOa1Maur6ca4LHUCoJbsoMw7y_c9lmLXjkZlQC_t4fVQDwjyHHMTj2X-SPIu_WGbkt_mQRYba4fqQ2fMtUXEE2hSydCCQ78PGpuMVwcIA216SlIPME9VBM9RHty5iRW1hgPohbCJc6CLJz-7h_FxjRIzPqa3xktjc2yE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "sesuatu",
+									"type": "text"
+								},
+								{
+									"key": "detail",
+									"value": "sangat sesuatu",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "sesuatu",
+									"disabled": true
+								},
+								{
+									"key": "detail",
+									"value": "sangat sesuatu",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Products",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMwZTUxYWVjZjQ2MjlmYmUyODYzZWFhNTEyZWFhOTA5OTUwYWE3ZjMxMWU1ZWJjOGIwNWIwYzk0Mzg3MWNkOTUwOTRkZDM2OTEwOTE1YmMiLCJpYXQiOiIxNjE0NzU2MzIyLjg5NjI0NSIsIm5iZiI6IjE2MTQ3NTYzMjIuODk2MjU2IiwiZXhwIjoiMTY0NjI5MjMyMi42NzEyOTUiLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.FP-1gZDyL4pUAGN0MTTGCeVzBWTOTIWUS9iBRgl_FrOopVi-AnFIOf3eiMKpbvK63dn5AbKpEmEhBMN1RyN1fV_JMiggN-VxRNGaMZU-scNotUmNyvxP9Ath9A5C6oXHRiH5ErKLWH28Ad_T-LP5F1Vf82VVmK7LJ8nHPzBVIoymQCF9kjABmYfSB3TPb9s1T5qTJgFX5S89cIELg_Gf_L8Vq56dlo9eU7YGg77zaEJB5ZT72u3NqSNdOQyJdh_QHBtemh5tun6C7hUtKPauhLWd1lqslsYppgkaYnHqKgTVJip77CLfE2YVuIsuP9i-AXmFtjsnr6xVVLzwGApLXYPjn9x8t-biZH0cvZXTUfMkjL6JoxUFfH4W9hZx8Y_K76OhtqKoBRYAKRPtkq5fq_c1VKTdB-7F8t5ArsiD0zsH2jntFldCZkdW-RJcy5arApbPMc8TzGMly-RntCrWoPVazLJ1yZbFB9SEoyarSH3msJEYZORHlq2jHOz9ipSATsdx7WLCOa1Maur6ca4LHUCoJbsoMw7y_c9lmLXjkZlQC_t4fVQDwjyHHMTj2X-SPIu_WGbkt_mQRYba4fqQ2fMtUXEE2hSydCCQ78PGpuMVwcIA216SlIPME9VBM9RHty5iRW1hgPohbCJc6CLJz-7h_FxjRIzPqa3xktjc2yE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Products {id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMwZTUxYWVjZjQ2MjlmYmUyODYzZWFhNTEyZWFhOTA5OTUwYWE3ZjMxMWU1ZWJjOGIwNWIwYzk0Mzg3MWNkOTUwOTRkZDM2OTEwOTE1YmMiLCJpYXQiOiIxNjE0NzU2MzIyLjg5NjI0NSIsIm5iZiI6IjE2MTQ3NTYzMjIuODk2MjU2IiwiZXhwIjoiMTY0NjI5MjMyMi42NzEyOTUiLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.FP-1gZDyL4pUAGN0MTTGCeVzBWTOTIWUS9iBRgl_FrOopVi-AnFIOf3eiMKpbvK63dn5AbKpEmEhBMN1RyN1fV_JMiggN-VxRNGaMZU-scNotUmNyvxP9Ath9A5C6oXHRiH5ErKLWH28Ad_T-LP5F1Vf82VVmK7LJ8nHPzBVIoymQCF9kjABmYfSB3TPb9s1T5qTJgFX5S89cIELg_Gf_L8Vq56dlo9eU7YGg77zaEJB5ZT72u3NqSNdOQyJdh_QHBtemh5tun6C7hUtKPauhLWd1lqslsYppgkaYnHqKgTVJip77CLfE2YVuIsuP9i-AXmFtjsnr6xVVLzwGApLXYPjn9x8t-biZH0cvZXTUfMkjL6JoxUFfH4W9hZx8Y_K76OhtqKoBRYAKRPtkq5fq_c1VKTdB-7F8t5ArsiD0zsH2jntFldCZkdW-RJcy5arApbPMc8TzGMly-RntCrWoPVazLJ1yZbFB9SEoyarSH3msJEYZORHlq2jHOz9ipSATsdx7WLCOa1Maur6ca4LHUCoJbsoMw7y_c9lmLXjkZlQC_t4fVQDwjyHHMTj2X-SPIu_WGbkt_mQRYba4fqQ2fMtUXEE2hSydCCQ78PGpuMVwcIA216SlIPME9VBM9RHty5iRW1hgPohbCJc6CLJz-7h_FxjRIzPqa3xktjc2yE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/products/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Products {id} EDIT",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMwZTUxYWVjZjQ2MjlmYmUyODYzZWFhNTEyZWFhOTA5OTUwYWE3ZjMxMWU1ZWJjOGIwNWIwYzk0Mzg3MWNkOTUwOTRkZDM2OTEwOTE1YmMiLCJpYXQiOiIxNjE0NzU2MzIyLjg5NjI0NSIsIm5iZiI6IjE2MTQ3NTYzMjIuODk2MjU2IiwiZXhwIjoiMTY0NjI5MjMyMi42NzEyOTUiLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.FP-1gZDyL4pUAGN0MTTGCeVzBWTOTIWUS9iBRgl_FrOopVi-AnFIOf3eiMKpbvK63dn5AbKpEmEhBMN1RyN1fV_JMiggN-VxRNGaMZU-scNotUmNyvxP9Ath9A5C6oXHRiH5ErKLWH28Ad_T-LP5F1Vf82VVmK7LJ8nHPzBVIoymQCF9kjABmYfSB3TPb9s1T5qTJgFX5S89cIELg_Gf_L8Vq56dlo9eU7YGg77zaEJB5ZT72u3NqSNdOQyJdh_QHBtemh5tun6C7hUtKPauhLWd1lqslsYppgkaYnHqKgTVJip77CLfE2YVuIsuP9i-AXmFtjsnr6xVVLzwGApLXYPjn9x8t-biZH0cvZXTUfMkjL6JoxUFfH4W9hZx8Y_K76OhtqKoBRYAKRPtkq5fq_c1VKTdB-7F8t5ArsiD0zsH2jntFldCZkdW-RJcy5arApbPMc8TzGMly-RntCrWoPVazLJ1yZbFB9SEoyarSH3msJEYZORHlq2jHOz9ipSATsdx7WLCOa1Maur6ca4LHUCoJbsoMw7y_c9lmLXjkZlQC_t4fVQDwjyHHMTj2X-SPIu_WGbkt_mQRYba4fqQ2fMtUXEE2hSydCCQ78PGpuMVwcIA216SlIPME9VBM9RHty5iRW1hgPohbCJc6CLJz-7h_FxjRIzPqa3xktjc2yE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/products/1?name=S3suau2&detail=1233",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"1"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "S3suau2"
+								},
+								{
+									"key": "detail",
+									"value": "1233"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Products {id} DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMwZTUxYWVjZjQ2MjlmYmUyODYzZWFhNTEyZWFhOTA5OTUwYWE3ZjMxMWU1ZWJjOGIwNWIwYzk0Mzg3MWNkOTUwOTRkZDM2OTEwOTE1YmMiLCJpYXQiOiIxNjE0NzU2MzIyLjg5NjI0NSIsIm5iZiI6IjE2MTQ3NTYzMjIuODk2MjU2IiwiZXhwIjoiMTY0NjI5MjMyMi42NzEyOTUiLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.FP-1gZDyL4pUAGN0MTTGCeVzBWTOTIWUS9iBRgl_FrOopVi-AnFIOf3eiMKpbvK63dn5AbKpEmEhBMN1RyN1fV_JMiggN-VxRNGaMZU-scNotUmNyvxP9Ath9A5C6oXHRiH5ErKLWH28Ad_T-LP5F1Vf82VVmK7LJ8nHPzBVIoymQCF9kjABmYfSB3TPb9s1T5qTJgFX5S89cIELg_Gf_L8Vq56dlo9eU7YGg77zaEJB5ZT72u3NqSNdOQyJdh_QHBtemh5tun6C7hUtKPauhLWd1lqslsYppgkaYnHqKgTVJip77CLfE2YVuIsuP9i-AXmFtjsnr6xVVLzwGApLXYPjn9x8t-biZH0cvZXTUfMkjL6JoxUFfH4W9hZx8Y_K76OhtqKoBRYAKRPtkq5fq_c1VKTdB-7F8t5ArsiD0zsH2jntFldCZkdW-RJcy5arApbPMc8TzGMly-RntCrWoPVazLJ1yZbFB9SEoyarSH3msJEYZORHlq2jHOz9ipSATsdx7WLCOa1Maur6ca4LHUCoJbsoMw7y_c9lmLXjkZlQC_t4fVQDwjyHHMTj2X-SPIu_WGbkt_mQRYba4fqQ2fMtUXEE2hSydCCQ78PGpuMVwcIA216SlIPME9VBM9RHty5iRW1hgPohbCJc6CLJz-7h_FxjRIzPqa3xktjc2yE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/products/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Permission",
+			"item": [
+				{
+					"name": "Permission Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNThmMTNhNWFkZWNlZDhhNmQyMWIwYzBiMTczZmUzZmMwZTYwYjJjNTAzNDdmNGU2MmExZGI4YmZiNTdhZjA1ZTk5NGQ5YTFkMTdlNmYwMGIiLCJpYXQiOiIxNjE0ODQxODQ1LjEzMjgwNyIsIm5iZiI6IjE2MTQ4NDE4NDUuMTMyODE1IiwiZXhwIjoiMTY0NjM3Nzg0NS4wNzU2NDkiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Yoyh4wXTZj_gtzlW2uz5hICeroZWA6b_uWcULvlA61d4VNAbpq9kCNUO3Sjcx3EPlmBmV8M7YflLObQrl594qaNmQRcS03GNVSdO-Z7UmuYI7Q5LqlN9Duca1mwMggaRvNYQ-p1d-UEoScVXLoNEBfVfCh14XQ1HPhxXpPEfWe3L9Cf7-loM7EbtQmQbI9__qjKfdXnRCHn8EQcDE1xHKmQbYiGKBVWuBLQFeSqOdwlg4MknyHEeKmFW7343XuKAOOdm-d7nnnTrCzg-54vYQmBBy9C2R6nZFfTfBkf68a85_6z7pDuIga5XkE14vBNuXRJ6tr_stwJBgeS96vwzDy_TaDfG_me71gKq_HU4XaS4NwkDIIOSjPAXm7_e0qMXUbAhUSh3bqEjSMNvgs-eiyMJoNEJ3I4FkXuDvfsIaDr8fWJy_SZzICjIPLRznJcRP2zoBzRRuAcCTlpooYCyBwt0pEbxNHHKY6qJ3b4zpxqticWTBv_MDI1q3ajtZrLURwtNh5OvRLe_4BVT-1PsrJrvBIvYj4rt3dnarPmWKtyhqBKFfAh9wkR9Y862P8wFYpeyf8uNn7xZIt0B3HNunlkYike9KqtnC4ZTNgMf2Yxb5h8YUNWIoWkYxHEmmfXUooPbOhJ1l-yrwAVFVmjJOSshhulp3lBa9Qr116cuXgY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "coba2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "myapi.test/api/create-permission",
+							"host": [
+								"myapi",
+								"test"
+							],
+							"path": [
+								"api",
+								"create-permission"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Permission Assign",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNThmMTNhNWFkZWNlZDhhNmQyMWIwYzBiMTczZmUzZmMwZTYwYjJjNTAzNDdmNGU2MmExZGI4YmZiNTdhZjA1ZTk5NGQ5YTFkMTdlNmYwMGIiLCJpYXQiOiIxNjE0ODQxODQ1LjEzMjgwNyIsIm5iZiI6IjE2MTQ4NDE4NDUuMTMyODE1IiwiZXhwIjoiMTY0NjM3Nzg0NS4wNzU2NDkiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Yoyh4wXTZj_gtzlW2uz5hICeroZWA6b_uWcULvlA61d4VNAbpq9kCNUO3Sjcx3EPlmBmV8M7YflLObQrl594qaNmQRcS03GNVSdO-Z7UmuYI7Q5LqlN9Duca1mwMggaRvNYQ-p1d-UEoScVXLoNEBfVfCh14XQ1HPhxXpPEfWe3L9Cf7-loM7EbtQmQbI9__qjKfdXnRCHn8EQcDE1xHKmQbYiGKBVWuBLQFeSqOdwlg4MknyHEeKmFW7343XuKAOOdm-d7nnnTrCzg-54vYQmBBy9C2R6nZFfTfBkf68a85_6z7pDuIga5XkE14vBNuXRJ6tr_stwJBgeS96vwzDy_TaDfG_me71gKq_HU4XaS4NwkDIIOSjPAXm7_e0qMXUbAhUSh3bqEjSMNvgs-eiyMJoNEJ3I4FkXuDvfsIaDr8fWJy_SZzICjIPLRznJcRP2zoBzRRuAcCTlpooYCyBwt0pEbxNHHKY6qJ3b4zpxqticWTBv_MDI1q3ajtZrLURwtNh5OvRLe_4BVT-1PsrJrvBIvYj4rt3dnarPmWKtyhqBKFfAh9wkR9Y862P8wFYpeyf8uNn7xZIt0B3HNunlkYike9KqtnC4ZTNgMf2Yxb5h8YUNWIoWkYxHEmmfXUooPbOhJ1l-yrwAVFVmjJOSshhulp3lBa9Qr116cuXgY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "userid",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "permission",
+									"value": "coba3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "myapi.test/api/assign-permission",
+							"host": [
+								"myapi",
+								"test"
+							],
+							"path": [
+								"api",
+								"assign-permission"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Permission Revoke",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNThmMTNhNWFkZWNlZDhhNmQyMWIwYzBiMTczZmUzZmMwZTYwYjJjNTAzNDdmNGU2MmExZGI4YmZiNTdhZjA1ZTk5NGQ5YTFkMTdlNmYwMGIiLCJpYXQiOiIxNjE0ODQxODQ1LjEzMjgwNyIsIm5iZiI6IjE2MTQ4NDE4NDUuMTMyODE1IiwiZXhwIjoiMTY0NjM3Nzg0NS4wNzU2NDkiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Yoyh4wXTZj_gtzlW2uz5hICeroZWA6b_uWcULvlA61d4VNAbpq9kCNUO3Sjcx3EPlmBmV8M7YflLObQrl594qaNmQRcS03GNVSdO-Z7UmuYI7Q5LqlN9Duca1mwMggaRvNYQ-p1d-UEoScVXLoNEBfVfCh14XQ1HPhxXpPEfWe3L9Cf7-loM7EbtQmQbI9__qjKfdXnRCHn8EQcDE1xHKmQbYiGKBVWuBLQFeSqOdwlg4MknyHEeKmFW7343XuKAOOdm-d7nnnTrCzg-54vYQmBBy9C2R6nZFfTfBkf68a85_6z7pDuIga5XkE14vBNuXRJ6tr_stwJBgeS96vwzDy_TaDfG_me71gKq_HU4XaS4NwkDIIOSjPAXm7_e0qMXUbAhUSh3bqEjSMNvgs-eiyMJoNEJ3I4FkXuDvfsIaDr8fWJy_SZzICjIPLRznJcRP2zoBzRRuAcCTlpooYCyBwt0pEbxNHHKY6qJ3b4zpxqticWTBv_MDI1q3ajtZrLURwtNh5OvRLe_4BVT-1PsrJrvBIvYj4rt3dnarPmWKtyhqBKFfAh9wkR9Y862P8wFYpeyf8uNn7xZIt0B3HNunlkYike9KqtnC4ZTNgMf2Yxb5h8YUNWIoWkYxHEmmfXUooPbOhJ1l-yrwAVFVmjJOSshhulp3lBa9Qr116cuXgY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "userid",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "permission",
+									"value": "coba3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "myapi.test/api/revoke-permission",
+							"host": [
+								"myapi",
+								"test"
+							],
+							"path": [
+								"api",
+								"revoke-permission"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "coba@coba.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "coba1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "myapi.test/api/login",
+					"host": [
+						"myapi",
+						"test"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "coba",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "coba@coba.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "coba1234",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "coba1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "myapi.test/api/register",
+					"host": [
+						"myapi",
+						"test"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
