@@ -28,6 +28,14 @@ Following things are ready to be used directly with AdminLTE Theme.
 3. Run `composer install`
 4. Generate application key by running `php artisan key:generate`
 
+### Create CRUD Model
+
+Powered by InfinyOm:
+
+php artisan infyom:api $MODEL_NAME
+php artisan infyom:scaffold $MODEL_NAME
+php artisan infyom:api_scaffold $MODEL_NAME
+
 ### Feel free to Contribute
 - clone this repo
 - make your new branch
