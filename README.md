@@ -33,7 +33,9 @@ Following things are ready to be used directly with AdminLTE Theme.
 Powered by InfinyOm:
 
 php artisan infyom:api $MODEL_NAME
+
 php artisan infyom:scaffold $MODEL_NAME
+
 php artisan infyom:api_scaffold $MODEL_NAME
 
 ### Feel free to Contribute
