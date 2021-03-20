@@ -38,6 +38,39 @@ php artisan infyom:scaffold $MODEL_NAME
 
 php artisan infyom:api_scaffold $MODEL_NAME
 
+custom Table Name :
+php artisan infyom:scaffold $MODEL_NAME --tableName=custom_table_name
+
+custom primary_Key :
+php artisan infyom:scaffold $MODEL_NAME --primary=custom_name_id
+
+custom Prulal :
+php artisan infyom:scaffold $MODEL_NAME --plural=AuthorBooks
+
+prefix :
+php artisan infyom:scaffold $MODEL_NAME --prefix=admin
+
+ignore field :
+php artisan infyom:scaffold $MODEL_NAME --ignoreFields=geo_location,last_login
+
+paginate :
+php artisan infyom:api $MODEL_NAME --paginate=10
+
+datatable :
+php artisan infyom:scaffold $MODEL_NAME --datatables=true
+
+spesific view only :
+php artisan infyom:scaffold $MODEL_NAME --views=index,create,edit,show
+
+
+
+### Create SCAFFOLD API From Table 
+
+php artisan infyom:scaffold $MODEL_NAME --fromTable --tableName=$TABLE_NAME
+
+with Spesific DB:
+php artisan infyom:scaffold $MODEL_NAME --fromTable --tableName=$TABLE_NAME --connection=connectionName
+
 ### Feel free to Contribute
 - clone this repo
 - make your new branch
